@@ -18,3 +18,17 @@ a{
     width: 90%;
     margin: auto;
 }
+.btn{
+    background-color: transparent;
+    font-size: 16px;
+    border: 1px solid #ff3814;
+    padding: 10px 30px;
+    border-radius: 50px;
+    color: #fff;
+    cursor: pointer;
+    transition: .3s;
+}
+.btn:hover{
+    background-color: #ff6347;
+    color: white
+}
