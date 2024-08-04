@@ -1,10 +1,16 @@
 import React from 'react';
 import './Home.css';
 import Header from '../Header/Header';
+import Menu from '../Menu/Menu';
 
 const Home = () => {
   return (
-      <Header/>
+    <div>
+       <Header/>
+       <Menu/>
+    </div>
+     
+      
   )
 }
 

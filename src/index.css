@@ -24,11 +24,13 @@ a{
     border: 1px solid #ff3814;
     padding: 10px 30px;
     border-radius: 50px;
+    text-align: center;
     color: #fff;
     cursor: pointer;
     transition: .3s;
 }
 .btn:hover{
     background-color: #ff6347;
-    color: white
+    color: white;
+    box-shadow: 2px 3px 4px rgba(0,0,0,0.5);
 }
