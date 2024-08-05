@@ -18,23 +18,30 @@
     gap: 30px;
     text-align: center;
     margin: 20px 0;
-    /* overflow-x: scroll; */
+    overflow-x: scroll;
 }
-/* .menu_content::-webkit-scrollbar{
+.menu_content::-webkit-scrollbar{
     display: none;
-} */
+}
 .menu_item img{
     border-radius: 50%;
     height: 100px;
     width: 100px;
+    cursor: pointer;
 }
 .menu_item p{
     margin-top: 10px;
     font-weight: 600;
+    cursor: pointer;
 }
 .menu hr{
     background-color: #e2e2e2;
     margin: 10px 0;
     border:none;
     height: 2px;
+}
+.menu_content .active{
+    padding: 3px;
+    border: 3px solid #ff6347;
+    box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.6);
 }
