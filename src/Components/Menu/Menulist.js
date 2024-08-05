@@ -1,42 +1,43 @@
-import pic1 from '../../Images/samosa.jpg';
-import pic2 from '../../Images/pannir.jpg';
-import pic3 from '../../Images/chicken_biriyani.jpg';
+import menu1 from '../../Images/menu_1.jpg';
+import menu2 from '../../Images/menu_2.jpg';
+import menu3 from '../../Images/menu_3.jpg';
+import menu4 from '../../Images/menu_4.jpg';
+import menu5 from '../../Images/menu_5.jpg';
+import menu6 from '../../Images/menu_6.jpg';
+import menu7 from '../../Images/menu_7.png';
+import menu8 from '../../Images/menu_8.jpeg';
 
 export const menuList = [
     {
         menuName : 'Pure Veg',
-        menuImg : pic1
+        menuImg : menu1
     },
     {
         menuName : 'Non-Veg',
-        menuImg : pic2
+        menuImg : menu2
+    },
+    {
+        menuName : 'Noodless',
+        menuImg : menu3
+    },
+    {
+        menuName : 'Street food',
+        menuImg : menu4
     },
     {
         menuName : 'Desert',
-        menuImg : pic3
+        menuImg : menu5
     },
     {
-        menuName : 'Snacks',
-        menuImg : pic3
+        menuName : 'Juice',
+        menuImg : menu6
     },
     {
-        menuName : 'juice',
-        menuImg : pic3
+        menuName : 'Cake',
+        menuImg : menu7
     },
     {
-        menuName : 'juice',
-        menuImg : pic3
-    },
-    {
-        menuName : 'Desert',
-        menuImg : pic3
-    },
-    {
-        menuName : 'Snacks',
-        menuImg : pic3
-    },
-    {
-        menuName : 'juice',
-        menuImg : pic3
+        menuName : 'Baked Goods',
+        menuImg : menu8
     }
 ]
