@@ -1,10 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Navbar.css';
 import logo from '../../Images/nav_logo.png';
 import cart from '../../Images/shopping-cart.png'
 
 
 const Navbar = () => {
+  const [menu, setMenu] = useState('home')
   return (
    <div className='navbar'>
     <div className='logo'>
@@ -15,16 +16,24 @@ const Navbar = () => {
 
       <ul className='nav_menubar'>
         <li>
-          <a href='#'>Home</a>
+            <a href='#' className={menu==='home'?'active':''} onClick={()=>setMenu("home")}>
+                Home
+            </a>
         </li>
         <li>
-          <a href='#'>Menu</a>
+            <a href='#' className={menu==='menu'?'active':'' } onClick={()=>setMenu("menu")}>
+                Menu
+            </a>
         </li>
         <li>
-          <a href='#'>Mobile-app</a>
+            <a href='#'className={menu==='mobile-app'?'active':''} onClick={()=>setMenu("mobile-app")}>
+                Mobile-app
+            </a>
         </li>
         <li>
-          <a href='#'>Contact us</a>
+            <a href='#' className={menu==='contact-us'?'active':''} onClick={()=>setMenu("contact-us")}>
+                Contact us
+            </a>
         </li>
       </ul>
       
@@ -32,7 +41,7 @@ const Navbar = () => {
           <div className='nav_cart'>
               <img src={cart} alt='cart' width={30}/>
           </div>
-          <a href='#' className='btn '> Sign In </a>
+          <a href='#' className='btn '> Sign  In </a>
       </div>
    </div>
   )

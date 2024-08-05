@@ -7,7 +7,7 @@ import menu6 from '../../Images/menu_6.jpg';
 import menu7 from '../../Images/menu_7.png';
 import menu8 from '../../Images/menu_8.jpeg';
 
-export const menuList = [
+const menulist = [
     {
         menuName : 'Pure Veg',
         menuImg : menu1
@@ -41,3 +41,5 @@ export const menuList = [
         menuImg : menu8
     }
 ]
+
+export default menulist;
