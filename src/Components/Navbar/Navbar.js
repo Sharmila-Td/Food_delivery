@@ -39,7 +39,7 @@ const Navbar = () => {
       
       <div className='nav_btns'>
           <div className='nav_cart'>
-              <img src={cart} alt='cart' width={30}/>
+              <img src={cart} alt='cart'/>
           </div>
           <a href='#' className='btn '> Sign  In </a>
       </div>

@@ -46,3 +46,62 @@
 .nav_menubar .active{
     color:#ff6347;
 }
+.nav_cart img{
+    width:50px;
+}
+@media (max-width:1050px){
+    .logo img{
+        width: 70px;
+        height: 80px;
+    }
+    .logo .nav_line{
+        width: 110px;
+        top: 90%;
+    }
+    .logo .nav_title{
+        top: 63%;
+        font-size: 24px;
+    }
+    .nav_menubar li{
+        font-size: 22px;
+    }
+    .nav_cart img{
+        width:60px;
+    }
+    .nav_btns a{
+        font-size: 22px;
+    }
+}
+
+@media (max-width:900px){
+    .logo img{
+        width: 60px;
+        height: 70px;
+    }
+    .logo .nav_line{
+        width: 110px;
+        top: 90%;
+    }
+    .logo .nav_title{
+        top: 60%;
+        font-size: 24px;
+    }
+    .nav_menubar{
+        gap: 20px;
+    }
+    .nav_menubar li{
+        font-size: 18px;
+    }
+    .nav_cart img{
+        width:50px;
+    }
+    .nav_btns a{
+        font-size: 18px;
+    }
+}
+@media (max-width:767px){
+    .nav_menubar {
+       display: none;
+    }
+    
+}

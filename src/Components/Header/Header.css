@@ -27,3 +27,43 @@
     width: 30%;
     margin-left: 30%;
 }
+
+@media (max-width:1050px){
+    .header{
+        height: 38vw;
+        background: url('../../Images/header_bg_3.jpg') no-repeat;
+        background-size: cover;
+    }
+    .header_content{
+      max-width: 60%;
+      top:10%;
+      left: 8%;
+      right: 50%;
+    }
+    .header_content h3{
+        font-size: 50px;
+    }
+    .header_content .btn{
+        width: 45%;
+        font-size: 20px;
+        margin-left: 0;
+    }
+}
+@media (max-width:767px){ 
+    .header_content{
+      max-width: 60%;
+      top:10%;
+      left: 8%;
+      right: 50%;
+    }
+    .header_content h3{
+        font-size: 50px;
+    }
+    .header_content p{
+        display: none;
+    }
+    .header_content .btn{
+        width: 60%;
+        font-size: 20px;
+    }
+}
