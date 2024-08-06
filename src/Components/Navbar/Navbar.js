@@ -2,9 +2,9 @@ import React, { useState } from 'react';
 import './Navbar.css';
 import logo from '../../Images/nav_logo.png';
 import cart from '../../Images/shopping-cart.png'
+import { Link } from 'react-router-dom';
 
-
-const Navbar = () => {
+const Navbar = ({setShowLogin}) => {
   const [menu, setMenu] = useState('home')
   return (
    <div className='navbar'>
@@ -16,24 +16,24 @@ const Navbar = () => {
 
       <ul className='nav_menubar'>
         <li>
-            <a href='#' className={menu==='home'?'active':''} onClick={()=>setMenu("home")}>
+            <Link to='/' className={menu==='home'?'active':''} onClick={()=>setMenu("home")}>
                 Home
-            </a>
+            </Link>
         </li>
         <li>
-            <a href='#' className={menu==='menu'?'active':'' } onClick={()=>setMenu("menu")}>
+            <Link to='#' className={menu==='menu'?'active':'' } onClick={()=>setMenu("menu")}>
                 Menu
-            </a>
+            </Link>
         </li>
         <li>
-            <a href='#'className={menu==='mobile-app'?'active':''} onClick={()=>setMenu("mobile-app")}>
+            <Link to='#'className={menu==='mobile-app'?'active':''} onClick={()=>setMenu("mobile-app")}>
                 Mobile-app
-            </a>
+            </Link>
         </li>
         <li>
-            <a href='#' className={menu==='contact-us'?'active':''} onClick={()=>setMenu("contact-us")}>
+            <Link to='#' className={menu==='contact-us'?'active':''} onClick={()=>setMenu("contact-us")}>
                 Contact us
-            </a>
+            </Link>
         </li>
       </ul>
       
@@ -41,7 +41,7 @@ const Navbar = () => {
           <div className='nav_cart'>
               <img src={cart} alt='cart'/>
           </div>
-          <a href='#' className='btn '> Sign  In </a>
+          <Link to='#' className='btn' onClick={()=>{setShowLogin(true)}}> Sign  In </Link>
       </div>
    </div>
   )
