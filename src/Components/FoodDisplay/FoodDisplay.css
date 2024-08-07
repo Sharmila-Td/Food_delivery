@@ -1,0 +1,15 @@
+.food_display{
+    margin-top: 30px;
+}
+.display_title{
+    text-align: center;
+    color: #ff3814;
+    font-weight: 500;
+}
+.display_list{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(240px, 1fr));
+    margin-top: 30px;
+    gap: 30px;
+    row-gap: 50px;
+}

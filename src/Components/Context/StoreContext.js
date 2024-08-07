@@ -1,10 +1,39 @@
-import React from 'react';
+import { createContext, useState, useEffect } from "react";
+import {Foodlist} from '../List/Foodlist';
 
+export const StoreContext = createContext(null)
 
-const StoreContext = () => {
+const StoreContextProvider = (props) => {
+  const [cartItems, setCartItems] = useState({})
+
+  const addToCart = (itemId) => {
+        if(!cartItems[itemId]){
+          setCartItems((prev)=>({...prev,[itemId]:1}))
+        }else{
+          setCartItems((prev)=>({...prev,[itemId]:prev[itemId]+1}))
+        }
+  }
+
+  const removeFromCart = (itemId) => {
+      setCartItems((prev)=>({...prev,[itemId]:prev[itemId]-1}))
+  }
+
+  useEffect(()=>{
+      console.log(cartItems)
+  },[cartItems])
+
+  const contextValue = {
+      Foodlist,
+      cartItems,
+      setCartItems,
+      addToCart,
+      removeFromCart
+  }
   return (
-    <div>StoreContext</div>
+    <StoreContext.Provider value={contextValue}>
+      {props.children}
+    </StoreContext.Provider>
   )
 }
 
-export default StoreContext
+export default StoreContextProvider;
